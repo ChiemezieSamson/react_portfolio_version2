@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@layer  base{
+  html {
+    scroll-behavior: smooth;
+    overscroll-behavior-block: contain;
+    overflow-x: hidden;
+  }
+
+  * , *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+  }
+
+  [type='text'],
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
+    
+    @apply bg-transparent w-full border-slate-300 rounded-lg 
+    shadow-sm focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500
+    mb-10 mt-3 caret-pink-500
+  }
+
+  [type='checkbox'],
+  [type='radio'] {
+    @apply bg-transparent rounded border border-gray-300 focus:accent-cyan-300 accent-cyan-300 
+    mb-10
+  }
 }
