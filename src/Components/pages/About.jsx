@@ -4,7 +4,7 @@ import { socialIcons } from '../../data'
 
 const About = () => {
   return (
-    <div className="mx-auto max-w-[1500px] md:h-screen md:grid md:items-center">
+    <div className="md:h-screen md:grid md:items-center">
        
       <div className='md:grid md:grid-cols-2 md:gap-x-6 md:mx-4 md:mt-12'>
 
@@ -12,11 +12,11 @@ const About = () => {
 
         <div className="mt-8 md:mt-3 prose mx-4 md:mx-0">
 
-          <h2 className="font-black text-3xl mb-1.5 text-white">
+          <h2 className="font-black text-3xl mb-1.5 text-white font-lora tracking-wide">
             About <span className="font-medium">Me</span>
           </h2>
 
-          <h5 className="font-medium text-2xl text-white mb-5">
+          <h5 className="font-medium text-2xl text-white mb-5 font-lora tracking-wide">
             HELLO! <span className="text-pink-400">I'm Samson Nebeolisa</span>
           </h5>
 

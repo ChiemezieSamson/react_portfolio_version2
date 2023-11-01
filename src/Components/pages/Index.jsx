@@ -24,12 +24,12 @@ const Index = () => {
 	}, [heroMessage, count]);
 
   return (
-    <div className='mx-auto max-w-3xl prose h-screen overflow-clip grid items-center'>
+    <div className='mx-auto max-w-3xl h-screen overflow-clip grid items-center'>
       <div className='p-4 text-center'>
 
-        <h1 className="mb-2 text-4xl font-black text-white">Welcome</h1>
+        <h1 className="mb-2 text-4xl font-black text-white font-lora tracking-wide">Welcome</h1>
 
-        <div className="uppercase font-black text-3xl text-white">{heroMessage}</div>
+        <div className="uppercase font-black text-3xl text-white font-lora tracking-wide">{heroMessage}</div>
 
         <p className="mx-auto px-4 text-lg font-lg my-0 max-w-2xl pt-2 text-white">
           Am a front-end Developer who loves building user-friendly website and

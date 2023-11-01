@@ -8,9 +8,8 @@
     scroll-behavior: smooth;
     overscroll-behavior-block: contain;
     overflow-x: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background: linear-gradient(rgb(0,0,0,0.6), rgb(0,0,0,0.6)), url("./asset/images/Pc-image.jpg");
+    margin: 0;
+    padding: 0;
   }
 
   * , *::before, *::after{
@@ -25,6 +24,9 @@
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./asset/images/Pc-image.jpg");
   }
 
   img {
