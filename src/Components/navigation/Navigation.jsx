@@ -8,7 +8,7 @@ const Navigation = ({HandleShowNavLinks, showNavLinks, handleCloseSideBar}) => {
   
  
   return (
-    <div className='grid grid-flow-col justify-between sm:my-5 max-h-28'>
+    <div className='grid grid-flow-col justify-between sm:py-5 max-h-28'>
 
       {/* Website Logo */}
       <Link to={"/"} className="block max-h-16 max-w-16 rounded-full overflow-clip mx-4 mt-5 sm:mt-0" onClick={handleCloseSideBar}>

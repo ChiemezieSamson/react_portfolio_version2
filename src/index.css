@@ -8,6 +8,9 @@
     scroll-behavior: smooth;
     overscroll-behavior-block: contain;
     overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgb(0,0,0,0.6), rgb(0,0,0,0.6)), url("./asset/images/Pc-image.jpg");
   }
 
   * , *::before, *::after{
@@ -59,3 +62,4 @@
     mb-10
   }
 }
+
