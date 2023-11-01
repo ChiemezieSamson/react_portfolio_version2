@@ -25,7 +25,7 @@ const Navigation = ({HandleShowNavLinks, showNavLinks, handleCloseSideBar}) => {
             return (
               <li key={link.id} className='mx-3 font-round md:mx-2 lg:mx-3 my-5 mr-20 sm:mr-0 sm:my-0' onClick={handleCloseSideBar}>
 
-                <NavLink to={link.link} className={({ isActive, isPending }) => isActive ? "text-pink-300" : isPending ? "text-purple-300 font-bold" : "text-white font-bold"}>
+                <NavLink to={link.link} className={({ isActive, isPending }) => isActive ? "text-pink-300" : isPending ? "text-purple-300 font-bold" : "text-white font-bold hover:text-pink-400"}>
                   <span aria-hidden="true" className="mx-3 sm:hidden md:inline md:mx-2 lg:mx-3">
                     {link.number}
                   </span>

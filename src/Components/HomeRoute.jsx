@@ -22,15 +22,15 @@ const HomeRoute = () => {
   }, [size])
 
   return (
-    <div className="w-full bg-stone-900/50 overflow-clip h-screen">
+    <div className="w-full relative bg-stone-900/50 overflow-clip">
 
       {/* Navigation Links */}
-      <header className='w-full'>
+      <header className='w-full fixed top-0'>
         <Navigation showNavLinks={showNavLinks} HandleShowNavLinks={HandleShowNavLinks} handleCloseSideBar={handleCloseSideBar}/>
       </header>
 
       {/* other pages */}
-      <main className='w-full h-screen grid items-center' onClick={handleCloseSideBar}>
+      <main className='w-full' onClick={handleCloseSideBar}>
         <Outlet />
       </main>
     </div>

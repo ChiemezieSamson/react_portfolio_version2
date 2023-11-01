@@ -1,3 +1,5 @@
+import { FaDribbble, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+
 export const navLinks = [
 	{
 		id: 0,
@@ -34,5 +36,24 @@ export const navLinks = [
 		name: "Contact",
 		number: "05",
 		link: "contact",
+	},
+];
+
+export const socialIcons = [
+	{
+		id: 0,
+		icon: FaDribbble,
+	},
+	{
+		id: 1,
+		icon: FaFacebook,
+	},
+	{
+		id: 2,
+		icon: FaLinkedin,
+	},
+	{
+		id: 3,
+		icon: FaTwitter,
 	},
 ];
