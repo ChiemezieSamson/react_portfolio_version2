@@ -4,9 +4,9 @@ import { socialIcons } from '../../data'
 
 const About = () => {
   return (
-    <div className="md:h-screen md:grid md:items-center">
+    <div className="md:grid md:items-center md:h-screen">
        
-      <div className='md:grid md:grid-cols-2 md:gap-x-6 md:mx-4 md:mt-12'>
+      <div className='md:grid md:grid-cols-2 md:gap-x-6 md:mx-4'>
 
         <img loading='lazy' src={AboutImage} alt="aboutImageSection" className='object-fill'/>
 

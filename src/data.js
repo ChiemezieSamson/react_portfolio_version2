@@ -5,6 +5,9 @@ import project3 from "./asset/images/React App.png";
 import project4 from "./asset/images/world_list.jpg";
 import project5 from "./asset/images/tribute.jpg";
 import project6 from "./asset/images/laptop_repair.jpg";
+import Bestplace from "./asset/images/Bestplace.jpg";
+import Complete from "./asset/images/Complete.jpg";
+import Frontend from "./asset/images/Frontend.jpg";
 
 export const navLinks = [
 	{
@@ -121,5 +124,41 @@ export const Project_image = [
 		name: "Project title",
 		category: "website",
 		image: project6,
+	},
+];
+
+export const Blogs = [
+	{
+		id: 0,
+		author: "By Samson",
+		title: "There are Many variation",
+		text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+		ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+		aliquip ex ea commodo consequat.`,
+		image: Bestplace,
+		date: "14 july 2022",
+	},
+	{
+		id: 1,
+		author: "By Samson",
+		title: "There are Many variation",
+		text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+		ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+		aliquip ex ea commodo consequat.`,
+		image: Complete,
+		date: "14 july 2022",
+	},
+	{
+		id: 2,
+		author: "By Samson",
+		title: "There are Many variation",
+		text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+		ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+		aliquip ex ea commodo consequat.`,
+		image: Frontend,
+		date: "14 july 2022",
 	},
 ];

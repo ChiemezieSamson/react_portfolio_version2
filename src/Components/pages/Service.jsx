@@ -3,10 +3,10 @@ import { FaRegChartBar } from 'react-icons/fa'
 
 const Service = () => {
   return (
-    <div className='mx-4 2xl:h-screen md:grid md:items-center'>
-      <div className="text-center py-[63px] text-white">
+    <div className='mx-4 md:grid md:items-center'>
+      <div className="text-center pt-16 text-white">
 
-        <h2 className="font-black text-3xl m-0 pt-6 font-lora tracking-wide">
+        <h2 className="font-black text-3xl pt-6 font-lora tracking-wide">
           <span className="font-medium">My</span> Services
         </h2>
 
@@ -32,7 +32,7 @@ const Service = () => {
               })}
           </ul>
 
-          <h2 className="my-0 pb-3">I Am Available for Freelance</h2>
+          <h2 className="my-0 pb-3 text-lg">I Am Available for Freelance</h2>
 
           <button className="rounded-md py-3 px-5 bg-pink-400 border-0 border-solid border-pink-400 text-white mb-10 hover:bg-pink-300 active:bg-pink-700 transition-colors duration-200 ease-linear
           shadow-md shadow-white/50">

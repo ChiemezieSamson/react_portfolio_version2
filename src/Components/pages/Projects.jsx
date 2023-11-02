@@ -30,51 +30,51 @@ const Projects = () => {
   }, [])
 
   return (
-    <div className="mx-4 md:h-screen">
-     	<div className="py-[63px] text-center text-white">
+    <div className="mx-4">
+     	<div className="pt-16 mb-12 lg:mb-5 text-center text-white">
 
-        <h2 className="font-black text-3xl m-0 pt-6 font-lora tracking-wide">
+        <h2 className="font-black text-3xl pt-6 font-lora tracking-wide">
           <span className="font-medium">My</span> Work
         </h2>
 
-			<p className="mx-auto px-4 text-lg font-lg my-0 block text-center py-2 ">
-				Am a front-end Developer who loves building user-friendly website and
-				web app and currently living in Nanjing China.
-			</p>
+        <p className="text-lg my-0 py-2">
+          Am a front-end Developer who loves building user-friendly website and
+          web app and currently living in Nanjing China.
+        </p>
 
-      <ul className='grid grid-flow-col max-w-xs mx-auto gap-x-2 text-center mt-5'>
-        {button.map((section) => {
-          return (
-            <li key={section.id} className='bg-sky-400 hover:bg-sky-300 rounded-md shadow shadow-white/50 cursor-pointer transition-colors duration-200 ease-linear' onClick={(e) => handleBtn(e)}>
-              {section.name}
-            </li>
-          );
-        })}
-      </ul>
+        <ul className='grid grid-flow-col max-w-xs mx-auto gap-x-2 text-center mt-5'>
+          {button.map((section) => {
+            return (
+              <li key={section.id} className='bg-pink-400 hover:bg-pink-300 rounded-md shadow shadow-white/50 cursor-pointer transition-colors duration-200 ease-linear' onClick={(e) => handleBtn(e)}>
+                {section.name}
+              </li>
+            );
+          })}
+        </ul>
 
-			<ul className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-8">
+        <ul className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-8">
 
-				{projects.map((project) => {
-					return (
-						<li key={project.id} className="relative z-0 isolate group overflow-clip rounded-md">
-              
-							<img src={project.image}	alt="Project"	loading="lazy" className='h-72 rounded-md object-fill'/>
-          
-              <div className="absolute text-center inset-x-0  -top-16 invisible opacity-0 grid items-center after:absolute after:content-[''] after:inset-0 after:bg-black/30 group-hover:top-0 group-hover:bottom-0
-                transition-all duration-200 ease-linear group-hover:opacity-100 group-hover:visible">
-                <span className='absolute z-10 inset-0 grid items-center'>
+          {projects.map((project) => {
+            return (
+              <li key={project.id} className="relative z-0 isolate group overflow-clip rounded-md">
+                
+                <img src={project.image}	alt="Project"	loading="lazy" className='h-72 rounded-md object-fill'/>
+            
+                <div className="absolute text-center inset-x-0  -top-16 invisible opacity-0 grid items-center after:absolute after:content-[''] after:inset-0 after:bg-black/40 group-hover:top-0 group-hover:bottom-0
+                  transition-all duration-200 ease-linear group-hover:opacity-100 group-hover:visible">
+                  <span className='absolute z-10 inset-0 grid items-center'>
 
-                  <span className="font-medium">
-                    category
-                    <div className="text-2xl font-semibold mt-1">{project.name}</div>
+                    <span className="font-medium">
+                      category
+                      <div className="text-2xl font-semibold mt-1">{project.name}</div>
+                    </span>
                   </span>
-                </span>
-              </div>
-						</li>
-					);
-				})}
-			</ul>
-		</div> 
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+		  </div> 
     </div>
   )
 }
