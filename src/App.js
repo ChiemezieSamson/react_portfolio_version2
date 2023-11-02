@@ -3,6 +3,7 @@ import HomeRoute from "./Components/HomeRoute";
 import Index from "./Components/pages/Index";
 import About from "./Components/pages/About";
 import Service from "./Components/pages/Service";
+import Projects from "./Components/pages/Projects";
 
 const App = createBrowserRouter([
 	{
@@ -23,6 +24,11 @@ const App = createBrowserRouter([
 			{
 				path: "service",
 				element: <Service />,
+				errorElement: "",
+			},
+			{
+				path: "project",
+				element: <Projects />,
 				errorElement: "",
 			},
 		],

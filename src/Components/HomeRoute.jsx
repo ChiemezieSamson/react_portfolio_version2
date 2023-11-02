@@ -22,10 +22,10 @@ const HomeRoute = () => {
   }, [size])
 
   return (
-    <div className="w-full relative bg-stone-900/50 overflow-clip font-round">
+    <div className="home w-full relative bg-stone-900/50 overflow-clip font-round">
 
       {/* Navigation Links */}
-      <header className='w-full fixed top-0'>
+      <header className='w-full fixed top-0 z-50'>
         <Navigation showNavLinks={showNavLinks} HandleShowNavLinks={HandleShowNavLinks} handleCloseSideBar={handleCloseSideBar}/>
       </header>
 

@@ -7,7 +7,7 @@ const Service = () => {
       <div className="text-center py-[63px] text-white">
 
         <h2 className="font-black text-3xl m-0 pt-6 font-lora tracking-wide">
-          <span className="font-medium">Our</span> Services
+          <span className="font-medium">My</span> Services
         </h2>
 
           <p className="text-lg my-0 py-2">
@@ -34,7 +34,8 @@ const Service = () => {
 
           <h2 className="my-0 pb-3">I Am Available for Freelance</h2>
 
-          <button className="rounded-md py-3 px-5 bg-pink-400 border-0 border-solid border-pink-400 text-white mb-10 hover:bg-pink-300 active:bg-pink-700 shadow-md shadow-white/50">
+          <button className="rounded-md py-3 px-5 bg-pink-400 border-0 border-solid border-pink-400 text-white mb-10 hover:bg-pink-300 active:bg-pink-700 transition-colors duration-200 ease-linear
+          shadow-md shadow-white/50">
             hire me
           </button>
       </div>

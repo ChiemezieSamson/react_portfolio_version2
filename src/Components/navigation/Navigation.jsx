@@ -36,7 +36,7 @@ const Navigation = ({HandleShowNavLinks, showNavLinks, handleCloseSideBar}) => {
           })}
         </ul>
 
-        <button onClick={(HandleShowNavLinks)} className='text-white sm:hidden text-2xl mt-5 cursor-pointer absolute top-2 right-2 z-50 hover:text-pink-300 p-0.5 shadow-sm shadow-black'>
+        <button onClick={(HandleShowNavLinks)} className='text-white sm:hidden text-2xl mt-5 cursor-pointer absolute top-2 right-2 bg-pink-300 hover:text-pink-300 p-0.5 shadow-sm shadow-black'>
           {showNavLinks ? <FaTimes className='gird items-center'/> : <FaBars className='gird items-center'/>}
         </button>
       </nav>
