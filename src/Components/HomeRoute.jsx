@@ -28,7 +28,7 @@ const HomeRoute = () => {
       {/* background Image */}
       <div className='fixed -z-20 inset-0 h-screen'>
         <div className='relative isolate after:absolute after:z-10 after:inset-0 after:bg-black/50 after:content-[""]'>
-          <img src={BackgroudImage} alt="BackgroudImage" className='h-screen'/>
+          <img loading='lazy' src={BackgroudImage} alt="BackgroudImage" className='h-screen'/>
         </div>
       </div>
 
