@@ -1,4 +1,12 @@
-import { FaDribbble, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+	FaDribbble,
+	FaFacebook,
+	FaLinkedin,
+	FaMailBulk,
+	FaMapMarked,
+	FaMobileAlt,
+	FaTwitter,
+} from "react-icons/fa";
 import project1 from "./asset/images/pnew.jpg";
 import project2 from "./asset/images/Nebe-Samson-Portfolio.png";
 import project3 from "./asset/images/React App.png";
@@ -160,5 +168,26 @@ export const Blogs = [
 		aliquip ex ea commodo consequat.`,
 		image: Frontend,
 		date: "14 july 2022",
+	},
+];
+
+export const contactObj = [
+	{
+		id: 1,
+		icon: FaMobileAlt,
+		title: "Call Us On",
+		text: "+86-13291396526",
+	},
+	{
+		id: 2,
+		icon: FaMailBulk,
+		title: "Email Us At",
+		text: "samsonchiemezie368@gmail.com",
+	},
+	{
+		id: 3,
+		icon: FaMapMarked,
+		title: "Visit Office",
+		text: "No. 639 Longmei Avenue, Jiangning Campus, Nanjing",
 	},
 ];

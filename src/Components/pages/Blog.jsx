@@ -1,5 +1,6 @@
 import React from 'react'
 import { Blogs } from '../../data'
+import { PageHead } from './sharedComponents/SharedComponent'
 
 
 const Blog = () => {
@@ -8,14 +9,7 @@ const Blog = () => {
     <div className="mx-4">
       <div className="text-center text-white pt-16 mb-12 lg:mb-5">
 
-        <h2 className="font-black text-3xl pt-6 font-lora tracking-wide">
-          <span className="font-medium">Our</span> Blog
-        </h2>
-
-        <p className="text-lg my-0 py-2">
-          Am a front-end Developer who loves building user-friendly website and
-          web app and currently living in Nanjing China.
-        </p>
+        <PageHead page={"Blog"}/>
 
         <ul className='grid gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3 mt-8'>
           {Blogs.map((blog) => {

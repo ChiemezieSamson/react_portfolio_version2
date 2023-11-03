@@ -6,7 +6,7 @@ const Index = () => {
   const message = "i am a frontend developer";
   
 	useEffect(() => {
-    const delay = 300; // Adjust the delay between letters (in milliseconds)
+    const delay = 300; 
 
     const interval = setInterval(() => {
       if (count < message.length) {

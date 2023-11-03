@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Project_image, button } from '../../data'
+import { PageHead } from './sharedComponents/SharedComponent';
 
 const Projects = () => {
   const [projects, setProjects] = useState([])
@@ -33,14 +34,7 @@ const Projects = () => {
     <div className="mx-4">
      	<div className="pt-16 mb-12 lg:mb-5 text-center text-white">
 
-        <h2 className="font-black text-3xl pt-6 font-lora tracking-wide">
-          <span className="font-medium">My</span> Work
-        </h2>
-
-        <p className="text-lg my-0 py-2">
-          Am a front-end Developer who loves building user-friendly website and
-          web app and currently living in Nanjing China.
-        </p>
+        <PageHead page={"Work"}/>
 
         <ul className='grid grid-flow-col max-w-xs mx-auto gap-x-2 text-center mt-5'>
           {button.map((section) => {

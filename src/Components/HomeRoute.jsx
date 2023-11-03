@@ -24,6 +24,8 @@ const HomeRoute = () => {
 
   return (
     <div className="home w-full relative overflow-clip font-round">
+      
+      {/* background Image */}
       <div className='fixed -z-20 inset-0 h-screen'>
         <div className='relative isolate after:absolute after:z-10 after:inset-0 after:bg-black/50 after:content-[""]'>
           <img src={BackgroudImage} alt="BackgroudImage" className='h-screen'/>
@@ -39,6 +41,10 @@ const HomeRoute = () => {
       <main className='w-full max-w-[1500px] mx-auto ' onClick={handleCloseSideBar}>
         <Outlet />
       </main>
+
+      <footer className='text-white text-center fixed bottom-0 inset-x-0 bg-pink-400'>
+        <small> Copyright 2022 &copy; Nebe.Samson</small>
+      </footer>
     </div>
   )
 }

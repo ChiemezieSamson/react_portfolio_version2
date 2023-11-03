@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutImage from "./../../asset/images/about.jpg"
-import { socialIcons } from '../../data'
+import { SocialMediaIcons } from './sharedComponents/SharedComponent'
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
 
         <img loading='lazy' src={AboutImage} alt="aboutImageSection" className='object-fill'/>
 
-        <div className="mt-8 md:mt-3 prose mx-4 md:mx-0">
+        <div className="my-8 md:mt-3 mx-4 md:mx-0">
 
           <h2 className="font-black text-3xl mb-1.5 text-white font-lora tracking-wide">
             About <span className="font-medium">Me</span>
@@ -20,41 +20,31 @@ const About = () => {
             HELLO! <span className="text-pink-400">I'm Samson Nebeolisa</span>
           </h5>
 
-          <p className="mt-0 text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
-          </p>
+          <div className='px-1 max-w-xl mb-7 text-lg'>
 
-          <p className="mt-0 text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+            <p className="mt-2.5 text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            </p>
 
-          <p className="mt-0 text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
+            <p className="mt-2.5 text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+            </p>
 
-          <ul className='list-none m-0 p-0'>
-            {socialIcons.map((icon) => {
+            <p className="mt-2.5 text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur.
+            </p>
+          </div>
 
-              return (
-                <li key={icon.id} className='inline-block mx-0.5'>
-
-                  <button className="px-2 py-2 rounded-full bg-white group border border-solid hover:bg-pink-400 active:bg-pink-700 transition-colors duration-200 ease-linear">
-                    <icon.icon className="text-lg grid items-center group-hover:text-white transition-colors duration-200 ease-linear" />
-                  </button>
-                </li>
-              )
-            })}
-
-          </ul>
+          <SocialMediaIcons />
         </div>
       </div>
 		</div>

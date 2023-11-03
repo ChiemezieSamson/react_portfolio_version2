@@ -5,6 +5,7 @@ import About from "./Components/pages/About";
 import Service from "./Components/pages/Service";
 import Projects from "./Components/pages/Projects";
 import Blog from "./Components/pages/Blog";
+import Contact from "./Components/pages/Contact";
 
 const App = createBrowserRouter([
 	{
@@ -35,6 +36,11 @@ const App = createBrowserRouter([
 			{
 				path: "blog",
 				element: <Blog />,
+				errorElement: "",
+			},
+			{
+				path: "contact",
+				element: <Contact />,
 				errorElement: "",
 			},
 		],
