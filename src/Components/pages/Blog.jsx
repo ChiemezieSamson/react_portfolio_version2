@@ -7,7 +7,7 @@ const Blog = () => {
   
   return (
     <div className="mx-4">
-      <div className="text-center text-white pt-16 mb-12 lg:mb-5">
+      <div className="text-center text-white pt-16 mb-12">
 
         <PageHead page={"Blog"}/>
 

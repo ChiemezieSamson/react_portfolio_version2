@@ -32,7 +32,7 @@ const Projects = () => {
 
   return (
     <div className="mx-4">
-     	<div className="pt-16 mb-12 lg:mb-5 text-center text-white">
+     	<div className="pt-16 mb-12 text-center text-white">
 
         <PageHead page={"Work"}/>
 
