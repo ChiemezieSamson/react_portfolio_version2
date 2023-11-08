@@ -25,9 +25,9 @@ export const SocialMediaIcons = () => {
 
         return (
           <li key={icon.id} className='inline-block mx-2'>
-            <button className="px-2 py-2 rounded-full bg-white group border border-solid hover:bg-pink-400 active:bg-pink-700 transition-colors duration-200 ease-linear">
+            <a href={icon.link} target="_blank" rel="noreferrer" className="px-2 py-2 rounded-full bg-white group border border-solid hover:bg-pink-400 active:bg-pink-700 transition-colors duration-200 ease-linear">
               <icon.icon className="text-lg text-stone-700 grid items-center group-hover:text-white transition-colors duration-200 ease-linear" />
-            </button>
+            </a>
           </li>
         )
       })}

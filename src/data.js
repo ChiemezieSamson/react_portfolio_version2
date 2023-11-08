@@ -60,18 +60,22 @@ export const socialIcons = [
 	{
 		id: 0,
 		icon: FaDribbble,
+		link: "https://twitter.com/SamsonChiemezie",
 	},
 	{
 		id: 1,
 		icon: FaFacebook,
+		link: "https://twitter.com/SamsonChiemezie",
 	},
 	{
 		id: 2,
 		icon: FaLinkedin,
+		link: "https://twitter.com/SamsonChiemezie",
 	},
 	{
 		id: 3,
 		icon: FaTwitter,
+		link: "https://twitter.com/SamsonChiemezie",
 	},
 ];
 
