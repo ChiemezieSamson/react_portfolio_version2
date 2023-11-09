@@ -23,7 +23,7 @@ const HomeRoute = () => {
   }, [size])
 
   return (
-    <div className="home w-full relative overflow-clip font-round">
+    <div className="w-full relative overflow-clip font-round">
       
       {/* background Image */}
       <div className='fixed -z-20 inset-0 h-screen'>
