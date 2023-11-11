@@ -24,7 +24,7 @@ const Navigation = ({HandleShowNavLinks, showNavLinks, handleCloseSideBar}) => {
             <li key={link.id} className='mx-3 font-round md:mx-2 lg:mx-3 my-5 mr-20 sm:mr-0 sm:my-0' onClick={handleCloseSideBar}>
 
               <NavLink to={link.link} className={({ isActive, isPending }) => isActive ? "text-pink-300" : isPending ? "text-purple-300 font-bold" : "text-white font-bold hover:text-pink-400"}>
-                <span aria-hidden="true" className="mx-3 sm:hidden md:inline md:mx-2 lg:mx-3">
+                <span className="mx-3 sm:hidden md:inline md:mx-2 lg:mx-3">
                   {link.number}
                 </span>
                 {link.name}
@@ -34,7 +34,7 @@ const Navigation = ({HandleShowNavLinks, showNavLinks, handleCloseSideBar}) => {
         })}
       </ul>
 
-      <button onClick={(HandleShowNavLinks)} className='text-white sm:hidden text-2xl mt-5 cursor-pointer absolute top-0 right-2 bg-pink-300 hover:text-pink-300 p-0.5 shadow-sm shadow-black'>
+      <button onClick={HandleShowNavLinks} className='text-white sm:hidden text-2xl mt-5 cursor-pointer absolute top-0 right-2 bg-pink-300 hover:text-pink-300 p-0.5 shadow-sm shadow-black'>
         {showNavLinks ? <FaTimes className='gird items-center'/> : <FaBars className='gird items-center'/>}
       </button>
     </nav>
